@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>AGRO</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GREEN AGRO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse list" id="navbarNavAltMarkup">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#abc">Fruits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ab">Vegetables</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="continer" >
+        <div class="cont-header">
+            <h1 class="text-center display-3" style="color: aliceblue;">We cultivate New crops and Fruits to make a
+                farmer increse profit! </h1>
+            <div>
+                <div class="row">
+                    <div class="col-6 bg-light login" style="margin-left:30px;width: 300px;">
+                        <div class="card-auth">
+                            <h3 class="text-center">Join as Buyer</h3>
+                            <img src="./ASSETS/img/buyer.png" alt="buyer" style="width: 100px;margin-left: 30%;">
+                            <h4>Welcome in Green agro!</h4>
+                            <p>we cultivate a new verity of crops and fruit. our farmer use the organic fertilizer for
+                                the growth of the corps. our farming fruits and vegetables is good for health.</p>
+                            <div class="text-center">
+                                <button class="bg-success log" style="padding: 7px;"><i
+                                        class="fas fa-wallet me-3"></i>Join Now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6 bg-light login" style="margin-left:30px;width: 300px;">
+                        <div class="card-auth">
+                            <h3 class="text-center">Join as Mentor</h3>
+                            <img src="./ASSETS/img/mentor.png" alt="buyer" style="width: 100px;margin-left: 30%;">
+                            <h4>Welcome in Green agro!</h4>
+                            <p>Join as a mentor and give the suggestion for cultivating the new verity of crops and how
+                                to grow the more crop in small space farm. and do the advertisement in your area.</p>
+                            <div class="text-center">
+                                <button class="bg-success log" style="padding: 7px;"><i
+                                        class="fas fa-book me-3"></i>Join Now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div>
+        <h3 class="display-4 text-center">Fruits <img src="./ASSETS/img/fruitbasket.jpg" alt="fruitbasket" class="img2">
+        </h3>
+        <div class="container-fluid container-products" id="abc">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card shadow-lg">
+                        <img src="./assets/img/apple.png" alt="apple" class="mx-auto d-block" />
+                        <h3 class="text-center">Apple</h3>
+                        <p style="padding: 10px;">Apples are the ideal fruit to eat at any time, having a positive role
+                            in the achievement of nourish balance. Their skin may be green, yellow or reddish and the meat taste ranges from a bitter to sweet flavour.
+                        </p>
+
+                        <h4 class="text-center">
+                            <i class="fas fa-minus-circle" onClick="decKg('apple')"></i>
+                            <span id="qnt-apple">0</span> KG
+                            <i class="fas fa-plus-circle" onClick="incKg('apple')"></i>
+                        </h4>
+                        
+                            
+                           
+                           
+   
+                        <button class="btn btn-warning w-100"> <span id="rup-apple">0</span>💲Buy Now</button>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card shadow-lg">
+                        <img src="./assets/img/banana.png" alt="apple" class="mx-auto d-block" />
+                        <h3 class="text-center">Banana</h3>
+                        <p style="padding: 10px;">The banana is a lengthy yellow fruit, found in the market in groups of three to twenty
+                            fruits, similar to a triangular cucumber, oblong and normally yellow. Its flavour is more or
+                            less sweet, depending on the variety.</p>
+
+                        <h4 class="text-center">
+                            <i class="fas fa-minus-circle" onClick="decKg('banana')"></i>
+                            <span id="qnt-banana">0</span> KG
+                            <i class="fas fa-plus-circle" onClick="incKg('banana')"></i>
+                        </h4>
+
+                        <button class="btn btn-warning w-100"> <span id="rup-banana">0</span>💲Buy Now</button>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card shadow-lg">
+                        <img src="./assets/img/grapes.png" alt="grapes" class="mx-auto d-block" />
+                        <h3 class="text-center">Grapes</h3>
+                        <p style="padding: 10px;">The grape is a fruit that grows in tight clusters. It has a white or purple flesh of sweet
+                            taste, eaten raw or in juice, although it is chiefly used for making wine. They are also
+                            used to make preserves.
+                        </p>
+
+                        <h4 class="text-center">
+                            <i class="fas fa-minus-circle" onClick="decKg('grapes')"></i>
+                            <span id="qnt-grapes">0</span> KG
+                            <i class="fas fa-plus-circle" onClick="incKg('grapes')"></i>
+                        </h4>
+
+                        <button class="btn btn-warning w-100"> <span id="rup-grapes">0</span>💲Buy Now</button>
+
+                    </div>
+                </div>
+                <div class="col-md-3" style="height: 300px;">
+                    <div class="product-card shadow-lg">
+                        <img src="./assets/img/orange.png" alt="orange" class="mx-auto d-block" />
+                        <h3 class="text-center">Orange</h3>
+                        <p style="padding: 10px;">Round orange fruit, consumed mainly in winter. Its flesh is also orange and is formed by
+                            small bags full of juice. The orange is used for consumption in fresh and for the industry,
+                            mainly in juice.
+                            Nutrition and eating</p>
+
+                        <h4 class="text-center">
+
+                            <i class="fas fa-minus-circle" onClick="decKg('orange')"></i>
+                            <span id="qnt-orange">0</span> KG
+                            <i class="fas fa-plus-circle" onClick="incKg('orange')"></i>
+                        </h4>
+
+                        <button class="btn btn-warning w-100"> <span id="rup-orange">0</span>💲Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3 class="display-4 text-center" style="margin-top: 60px;">Vegetables<img src="./ASSETS/img/vegetables.png" alt="fruitbasket" class="img2">
+        </h3>
+        <div class="container-fluid container-products" id="ab">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card shadow-lg">
+                        <img src="./assets/img/tomato.png" alt="tomato" class="mx-auto d-block" style="width: 100px;"/>
+                        <h3 class="text-center">Tomato</h3>
+                        <p style="padding: 10px;">The tomato is the most important vegetable in the world. It is cultivated everywhere in the world; the main producing countries are China and the United States. It is consumed in multiple ways, both raw as processed for the industry. At present there exists a great range of varieties, cultivated all the year round, with fruits of different sizes, shapes and colours. Besides, it is rich in fibre and low in calories, supplying vitamins and minerals.                       </p>
+
+                        <h4 class="text-center">
+                            <i class="fas fa-minus-circle" onClick="fdecKg('tomato')"></i>
+                            <span id="qnt-tomato">0</span> KG
+                            <i class="fas fa-plus-circle" onClick="fincKg('tomato')"></i>
+                        </h4>
+                        
+                            
+                           
+                           
+   
+                        <button class="btn btn-warning w-100"> <span id="rup-tomato">0</span>💲Buy Now</button>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card shadow-lg">
+                        <img src="./assets/img/potato.png" alt="potato" class="mx-auto d-block" style="width: 100px;" />
+                        <h3 class="text-center">Potato</h3>
+                        <p style="padding: 10px;">The potato is one of the most cultivated products in the world. Its consumption is intended for human feeding in fresh, for cattle feeding and as raw material for the food and agriculture processing industries, such as chips, potato flakes, frozen potatoes, etc.
+                        </p>
+
+                        <h4 class="text-center" style="margin-top: 113px;">
+                            <i class="fas fa-minus-circle" onClick="fdecKg('potato')"></i>
+                            <span id="qnt-potato">0</span> KG
+                            <i class="fas fa-plus-circle" onClick="fincKg('potato')"></i>
+                        </h4>
+
+                        <button class="btn btn-warning w-100"> <span id="rup-potato">0</span>💲Buy Now</button>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card shadow-lg">
+                        <img src="./assets/img/cauliflower.png" alt="cauliflower" class="mx-auto d-block"  style="width: 100px;"/>
+                        <h3 class="text-center">Cauliflower</h3>
+                        <p style="padding: 10px;">The cauliflower is a vegetable that belongs to the cabbage family. The part that one consumes is the flower or inflorescence, highly appreciated for its taste. It can be presented in many ways, both raw and cooked. It is an important source of vitamins and minerals. In addition, it contributes with fibber and it is low in calories.
+                        </p>
+
+                        <h4 class="text-center" style="margin-top: 65px;">
+                            <i class="fas fa-minus-circle" onClick="fdecKg('cauliflower')"></i>
+                            <span id="qnt-cauliflower">0</span> KG
+                            <i class="fas fa-plus-circle" onClick="fincKg('cauliflower')"></i>
+                        </h4>
+
+                        <button class="btn btn-warning w-100"> <span id="rup-cauliflower">0</span>💲Buy Now</button>
+
+                    </div>
+                </div>
+                <div class="col-md-3" style="height: 300px;">
+                    <div class="product-card shadow-lg">
+                        <img src="./assets/img/cabbage.png" alt="cabbage" class="mx-auto d-block" style="width: 100px;" />
+                        <h3 class="text-center">Cabbage</h3>
+                        <p style="padding: 10px;">The cabbage is a vegetable highly appreciated in the traditional cooking of many countries, since it is known from very old and is supposed to have diverse healing properties. They have spreaded worldwide, and at present they are consumed in multiple ways, although they are usually cooked. The head is formed when the leaves press together onto the plant’s main bud.
+                            Nutrition and eating</p>
+
+                        <h4 class="text-center" style="margin-top: 38px;">
+
+                            <i class="fas fa-minus-circle" onClick="fecKg('cabbage')"></i>
+                            <span id="qnt-cabbage">0</span> KG
+                            <i class="fas fa-plus-circle" onClick="fncKg('cabbage')"></i>
+                        </h4>
+
+                        <button class="btn btn-warning w-100"> <span id="rup-cabbage">0</span>💲Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://kit.fontawesome.com/e872ba44e8.js" crossorigin="anonymous"></script>
+    <script src="./JS/script.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
